@@ -1,0 +1,27 @@
+body{
+    background-color:#edede9;
+}
+label{
+    font-size: 18px;
+}
+.alt{
+    width: 77.2vw;
+}
+.font{
+    font-size: 18px;
+}
+header{
+    background-color:brown;
+    ;
+    height: 5.5VW;
+}
+.cab{
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.h1{
+    color:white ;
+}

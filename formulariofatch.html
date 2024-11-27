@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/projeto.css" media="screen" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cadastra.js"></script>
+    <title>Consulta por CEP</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <p class="cab h1 p-2">Consulta por CEP</p>
+        </div>
+    </header>
+    <div class="container">
+        <form id="frm">
+            <div class="row g-3 align-items-center mt-5">
+                <div class="col-auto">
+                    <label for="cep" class="col-form-label font">CEP</label>
+                </div>
+                <div class="col-auto">
+                    <input type="text" id="cep" class="form-control alt" aria-describedby="passwordHelpInline" placeholder="Insira seu CEP">
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-dark" type="button" onclick="enviar()">Enviar</button>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="endereco" class="form-label">Endereço</label>
+                        <input type="text" class="form-control" id="endereco">
+                    </div>
+                    <div class="mb-3">
+                        <label for="complemento" class="form-label">Complemento</label>
+                        <input type="text" class="form-control" id="complemento">
+                    </div>
+                    <div class="mb-3">
+                        <label for="bairro" class="form-label">Bairro</label>
+                        <input type="text" class="form-control" id="bairro">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cidade" class="form-label">Cidade</label>
+                        <input type="text" class="form-control" id="cidade">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nr" class="form-label">Número</label>
+                        <input type="text" class="form-control" id="nr" placeholder="Insira o número da sua residência">
+                    </div>
+                    <label for="uf">Estado</label>
+                    <select class="form-select" id="uf">
+                        <option selected>Escolha seu estado</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-5 d-grid gap-2 d-md-block">
+                <div class="col" id="json">
+                    <button type="button" class="btn btn-dark" onclick="cadastrar()">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
